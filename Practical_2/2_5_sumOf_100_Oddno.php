@@ -1,7 +1,7 @@
 <?php
 $sum=0;
 
-//Inside 200 there are 100 odd ansd 100 even numbers
+//Inside 200 there are 100 odd and 100 even numbers
 
 for($i=1;$i<=200;$i+=2){
     $sum=$sum+$i;

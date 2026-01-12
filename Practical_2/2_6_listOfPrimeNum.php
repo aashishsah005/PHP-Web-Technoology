@@ -14,7 +14,7 @@
     </form>
 
     <?php
-        if(isset==$_POST["submit"]){
+        if(isset($_POST["submit"])){
             $start=$_POST["start"];
             $end=$_POST["end"];
         }
@@ -22,11 +22,13 @@
         for($i=$start;$i<=$end;$i++){
             $isPrime=True;
             for($j=2;$j<=sqrt($i);$j++){
-                if($i/$j==0){
+                if($i%$j==0){
                     $isPrime=FALSE;
+                    break;
                 }
-
-            echo 
+            }
+            if($isPrime==TRUE){
+                echo $i." ";
             }
         }
     ?>
