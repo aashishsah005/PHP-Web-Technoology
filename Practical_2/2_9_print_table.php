@@ -4,6 +4,10 @@
     <title>Print Table </title>
 </head>
 <body>
+
+    <!-- form takes the input and pass it to the php/backend   -->
+    <!-- there are two form methods : POST and GET            -->
+
     <form method="POST">
         Enter number of table you want to print : 
         <input type="number" name="table" required><br><br>

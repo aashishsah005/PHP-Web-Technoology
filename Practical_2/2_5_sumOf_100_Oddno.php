@@ -6,5 +6,6 @@ $sum=0;
 for($i=1;$i<=200;$i+=2){
     $sum=$sum+$i;
 }
+
 echo "Sum of first 100 odd numbers : ".$sum;
 ?>
